@@ -2,13 +2,18 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Main extends CI_Controller {
-
+	
+	/**
+	 * Index method. It loads Homepage
+	 */
 	public function index()
-	{
-		$data['title'] = "homepage";
-		
-		$this->load->view('inc/header',$data);
-		$this->load->view('form');
-		$this->load->view('inc/footer');
+	{	
+		$data['title']='NewsPaper | We provide News';
+		$this->load->view('include/header', $data);
+		$this->load->view('include/navbar');
+		$this->load->view('home');
+		$this->load->view('include/footer');
 	}
+
+		
 }
