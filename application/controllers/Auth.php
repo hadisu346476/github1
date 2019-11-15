@@ -17,7 +17,7 @@ class Auth extends CI_Controller
 		$data['title']='Login | Newspaper';
 		$data['error']= $this->session->flashdata('error');
 		$this->load->view('include/header', $data);
-		$this->load->view('include/navbar');
+		$this->load->view('include/navbarl');
 		$this->load->view('loginform');
 		$this->load->view('include/footer');
 	}
