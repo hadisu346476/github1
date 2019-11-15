@@ -10,7 +10,7 @@ class Main extends CI_Controller {
 	{	
 		$data['title']='NewsPaper | We provide News';
 		$this->load->view('include/header', $data);
-		$this->load->view('include/navbar');
+		$this->load->view('include/navbarl');
 		$this->load->view('home');
 		$this->load->view('include/footer');
 	}
